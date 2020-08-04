@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal</title>
+    <script src="https://kit.fontawesome.com/095d92641a.js" crossorigin="anonymous"></script>
+    <style>
+        .container{
+            display: flex;
+            flex-direction: column;
+            background-color: rgb(111, 139, 170);
+            align-items: center;
+            justify-content: center;
+        }
+        #navbar{
+            position: fixed;
+            background-color: brown;
+            top: 0;                     /*ensures that there's no margin top*/
+            height: 7%;
+            width: 100%;               /*covers the width of the screen*/
+            overflow: hidden;                        /*ensures that there is no writeup on the same line as the bar, even if the bar is not 100%*/
+        }
+        nav ul li{
+            display: inline;
+            font-size: 20px;
+            padding-right: 20px;          /*padding between the links*/
+            float: right;                 /*moves the navlinks to the right*/
+        }
+        li a{
+            text-decoration: none;         /*removes the underline of the links*/
+            color: white;               /*makes the font of the link white*/
+        }
+        li a:hover{
+            background-color: blue;    /*changes background color when hovered*/
+        }
+        #welcome-section{
+            margin-top: 0%;
+            width: 100%;
+            background-color: black;
+            color: white;
+            height: 100vh;
+        }
+        .mytext{
+            position: relative;
+            top: 40%;
+            transform: translateY(-50%);
+            text-align: center;
+            font-size: 50px;
+            font-family: arial;
+        }
+        .myitalics{
+            position: relative;
+            top: 33%;
+            transform: translateY(-50%);
+            text-align: center;
+            font-size: 20px;
+            font-family: Helvetica;
+            color: red;
+            word-spacing: 10px;
+            line-height: 20px;
+        }
+        h2{
+            text-align: center;
+            color: white;
+            font-weight: bolder;
+            font-size: 50px;
+            font-family: monospace;
+            border-bottom: 2px solid currentColor;
+        }
+        
+        h3{
+            font-family: monospace;
+            font-weight: bolder;
+            font-size: 60px;
+            padding-top: 8%;
+        }
+        #italic{
+            font-size: 20px;
+        }
+        .quick{
+            color: white;
+            font-size: 25px;
+            font-family: monospace;
+            line-height: 150px;
+            padding-right: 60px;
+        }
+        #profile-link{
+            color: white;
+            font-size: 25px;
+            font-family: monospace;
+            line-height: 150px;
+            padding-right: 60px;
+        }
+        img{
+            width: 350px;
+            height: 350px;
+        }
+        #projects{
+            display: flex;
+            align-items: center;                   /* this and the next line ensures that the class:parent is centered*/
+            justify-content: center;
+            max-width: 1300px;                     /*ensures that the width of the image would be in the container:class*/
+            flex-wrap: wrap;                       /*ensures that once the widthh is filled by the no of width the  images can contain, it drops to the next line*/
+            margin-bottom: 30px;
+        }
+        
+        .project-tile{
+            border: 1px solid rgba(0, 0, 0, 0.075);
+            margin: 15px;
+        }
+        .project-tile a{
+            color: white;
+            font-size: 25px;
+            text-decoration: none;
+        }
+        #alone{
+            color: white;
+            font-size: 25px;
+            text-decoration: none;
+            background-color: black;
+            padding: 10px;
+            border-radius: 5px;
+            justify-self: center;
+        }
+        #anchor{
+            display: flex;
+            align-items: center;                   /* this and the next line ensures that the class:parent is centered*/
+            justify-content: center;
+            margin-bottom: 80px;
+            margin-top: 10px;
+
+        }
+        .connect{
+            width: 100%;                /*ensures that the width of the page is full*/
+            height: 90vh;               /*determines the % of viewport of the screen*/
+            background-color: black;
+            color: white;
+            align-items: center;          /*helps to center the items*/
+            justify-content: center;
+            text-align: center;
+            line-height: 1px;
+        }
+        .footer{
+            background-color: black;
+            color: white;
+            border-top: 1px solid red;
+            width: 100%;
+        }
+        #make{
+            display: inline;
+        }
+        @media screen and (max-width: 1300px) {
+            #projects{
+                flex-wrap: wrap;
+            }
+        }
+        /*h3{
+            position: relative;
+            top: 50%;
+            left: 50%;
+            transform: translateY(-500%);
+        }*/
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="navbar">
+            <nav>
+                <ul>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#work">Work</a></li>
+                    <li><a href="#about">About</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div id="welcome-section">
+            <h1 id="about" class="mytext">Hey I am Mimic</h1>
+            <p class="myitalics"><i>a web developer</i></p>
+        </div>
+
+        <section>
+            <h2>These are some of my projects</h2>
+            <div id="projects">
+                <div class="project-tile">
+                    <a href="https://codepen.io/freeCodeCamp/full/zNqgVx"><img src="https://raw.githubusercontent.com/freeCodeCamp/cdn/master/build/testable-projects-fcc/images/tribute.jpg" alt="Dr. Norman Borlaug's tribute page"><br>Tribute Page</a>
+                </div>
+                <div class="project-tile">
+                    <a href="https://codepen.io/freeCodeCamp/full/qRZeGZ"><img src="https://raw.githubusercontent.com/freeCodeCamp/cdn/master/build/testable-projects-fcc/images/random-quote-machine.png" alt="Random Quote Site"><br>Random Quote Machine</a>
+                </div>
+                <div class="project-tile">
+                    <a href="https://codepen.io/freeCodeCamp/full/wgGVVX"><img src="https://raw.githubusercontent.com/freeCodeCamp/cdn/master/build/testable-projects-fcc/images/calc.png" alt="JS Calculator"><br>JavaScript Calculator</a>
+                </div>
+                <div class="project-tile">
+                    <a href="https://codepen.io/freeCodeCamp/full/mVEJag"><img src="https://raw.githubusercontent.com/freeCodeCamp/cdn/master/build/testable-projects-fcc/images/map.jpg" alt="World Map"><br>Map Data Across the Globe</a>
+                </div>
+                <div class="project-tile">
+                    <a href="https://codepen.io/freeCodeCamp/full/wGqEga"><img src="https://raw.githubusercontent.com/freeCodeCamp/cdn/master/build/testable-projects-fcc/images/wiki.png" alt="Wiki Viewer"><br>Wikipedia Viewer</a>
+                </div>
+                <div class="project-tile">
+                    <a href="https://codepen.io/freeCodeCamp/full/KzXQgy"><img src="https://raw.githubusercontent.com/freeCodeCamp/cdn/master/build/testable-projects-fcc/images/tic-tac-toe.png" alt="Tic Tac Game"><br>Tic Tac Toe Game</a>
+                </div>
+            </div>
+            <div id="anchor"><a href="https://codepen.io/FreeCodeCamp/" target="_blank" id="alone">Show all ></a></div>
+        </section>
+
+        <div class="connect">
+            <h3>Let's work together...</h3>
+            <p><i id="italic">How do you take your coffee?</i></p>
+            <a href="https://web.facebook.com/freecodecamp?_rdc=1&_rdr" target="_blank" class="quick"><i class="fab fa-facebook-square"> Facebook</i></a>
+            <a href="https://github.com/freecodecamp" target="_blank" id="profile-link"><i class="fab fa-github"> GitHub</i></a>
+            <a href="https://twitter.com/freecodecamp" target="_blank" class="quick"><i class="fab fa-twitter"> Twitter</i></a>
+            <a href = "mailto: abc@example.com" class="quick"><i class="far fa-envelope"> Send a mail</i></a>
+            <a href="tel:+1123-456-7890" class="quick"><i class="fas fa-mobile-alt"> Call me</i></a>
+        </div>
+        <div class="footer">
+            <p>**This is just a fake portfolio. All the projects and contact details given are not real.</p>
+            <p id="make">&copy Created for freeCodeCamp <i class="fab fa-free-code-camp"></i></p>
+        </div>
+    </div>
+</body>
+</html>
